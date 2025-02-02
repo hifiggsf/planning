@@ -1,15 +1,13 @@
-import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
-import { getFirestore, collection, addDoc, getDocs, updateDoc, doc } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore.js";
-
-
+// Firebase config (Get from Firebase Console)
 const firebaseConfig = {
-    apiKey: "AIzaSyCl6U7h1z9cp54LxM3_nlQqLx2iV1PaAHI",
-    authDomain: "planningapp-1bbcf.firebaseapp.com",
-    projectId: "planningapp-1bbcf",
-    storageBucket: "planningapp-1bbcf.firebasestorage.app",
-    messagingSenderId: "930865022652",
-    appId: "1:930865022652:web:460fe9f1a396f15bd3b2b9"
+  apiKey: "YOUR_API_KEY",
+  authDomain: "YOUR_PROJECT.firebaseapp.com",
+  projectId: "YOUR_PROJECT_ID",
+  storageBucket: "YOUR_PROJECT.appspot.com",
+  messagingSenderId: "YOUR_SENDER_ID",
+  appId: "YOUR_APP_ID"
 };
+
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const db = getFirestore(app);
+firebase.initializeApp(firebaseConfig);
+const db = firebase.firestore();
