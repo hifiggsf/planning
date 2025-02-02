@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Tasks</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="currentSector">Sector: </h1>
+        <input type="text" id="taskInput" placeholder="Enter Task">
+        <button onclick="addTask()">Add Task</button>
+        <ul id="taskList"></ul>
+        <button onclick="nextSector()">Next Sector</button>
+    </div>
+    <script src="firebase.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planning - Enter Sectors</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Which sectors do you want to work on today?</h1>
+        <input type="text" id="sectorInput" placeholder="Enter sector (e.g., Work)">
+        <button onclick="addSector()">Add Sector</button>
+        <ul id="sectorList"></ul>
+        <button onclick="goToTasksPage()">Next</button>
+    </div>
+    <script src="firebase.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
